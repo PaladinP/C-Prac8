@@ -1,0 +1,17 @@
+12  12 23
+
+int pixelCount = 0;
+	while(readFile >> tempPixelValue){
+		pixelCount++;
+		if(pixelCount == 1){
+			r = tempPixelValue;
+		}else if(pixelCount == 2){
+			g = tempPixelValue;
+		}else if(pixelCount == 3){
+			b = tempPixelValue;
+			pixelCount = 0;
+		}
+	}
+red
+mod 2 : g
+mod 3 : b
